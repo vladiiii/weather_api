@@ -6,7 +6,6 @@ import os
 
 def index(request):
     # Geolocation
-    # x = "95.79.162.218"
     y = get_ip(request)
     geo_url = requests.get(f"http://ip-api.com/json/{y}")
     geo_res = geo_url.json()
