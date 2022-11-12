@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather Near You</title>
+</head>
+
+<body class="m-0 p-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-900 via-purple-900 to-slate-900">
+    <section class="w-full h-screen text-gray-600 body-font">
+        <div class="container px-5 py-60 mx-auto">
+          <div class="flex justify-center content-center -m-2">
+            <div class="p-4 md:w-1/3">
+              <div class="bg-white h-full border-2 border-gray-300 border-opacity-60 rounded-lg overflow-hidden">
+                <div class="p-6">
+                    <div class="flex flex-row justify-between">
+                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">{{city_name}}</h1>
+                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">{{day}}</h1>
+                    </div>
+                    <div class="flex flex-row justify-between">
+                        <p class="leading-relaxed mb-3">{{desc}}</p>
+                        <p class="leading-relaxed mb-3">{{temp}}&#8451;</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+</body>
+
+</html>
