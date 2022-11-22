@@ -13,7 +13,7 @@ def index(request):
     lg = geo_res["lon"]
 
     # Weather
-    appid = os.environ["KEY"]
+    appid = os.environ.get("KEY")
     url = "http://api.openweathermap.org/data/2.5/weather"
     params = {"lat": 56.3269, "lon": 44.0059, "appid": appid, "units": "metric"}
     r = requests.get(url=url, params=params)
